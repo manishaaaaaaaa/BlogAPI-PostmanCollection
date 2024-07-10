@@ -1,0 +1,111 @@
+{
+    "info": {
+      "name": "Blog API",
+      "_postman_id": "some-unique-id",
+      "description": "",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Get All Blogs",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/blogs",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "api",
+              "blogs"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Get Blog by ID",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/api/blogs/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "api",
+              "blogs",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Blog Post",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"This is My First Blog Post\",\n  \"description\": \"This is the content of my first blog post.\",\n  \"category\": \"Welcome to my blog! I'm Manisha Dahal, an electronics communication and information engineering student with a passion for hardware projects and data science. From creating innovative solutions using Raspberry Pi and Arduino to diving deep into the world of data analysis with pandas, my journey has been both challenging and rewarding. Recently, . I'm excited to share my ongoing projects, like plant disease detection using MobileNetV2, and my experiences in AWS and AI ML. Join me as I navigate through these fascinating fields, and feel free to connect and share your thoughts!\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/api/blogs",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "api",
+              "blogs"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Update Blog Post",
+        "request": {
+          "method": "PUT",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"title\": \"HIII this is Manisha\",\n  \"description\": \"This is the updated content of my blog post.\",\n  \"category\": \"Sleeping and watching series are my favourite things to do\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:5000/api/blogs/1",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "5000",
+            "path": [
+              "api",
+              "blogs",
+              "1"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
